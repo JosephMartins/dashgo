@@ -1,7 +1,10 @@
 import { Flex, Icon, Input } from "@chakra-ui/react";
 import { RiSearchLine } from "react-icons/ri";
+import { useRef } from 'react';
 
 export function SearchBox() {
+
+
   return (
     <Flex
       as="label"
@@ -22,6 +25,7 @@ export function SearchBox() {
         variant="unstyled"
         placeholder="Buscar na plataforma"
         px="4"
+        autoFocus
         mr="4"
         _placeholder={{
           color: "gray.400",
